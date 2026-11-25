@@ -295,6 +295,20 @@
   margin-top: clamp(1.75rem, 4vw, 3.5rem);
 }
 .chambers-team-grid > p { max-width: 31rem; justify-self: end; line-height: 1.65; font-size: 1.12rem; }
+@media (min-width: 721px) {
+  .chambers-team-grid { row-gap: 0; }
+  .chambers-team-grid > figure { display: grid; grid-row: 1 / span 2; grid-template-rows: subgrid; }
+  .chambers-team-grid > p {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: stretch;
+    grid-column: 2;
+    grid-row: 1;
+    max-width: 25rem;
+    gap: .5rem;
+  }
+}
 .chambers-team-portrait { width: min(100%, 15rem); height: auto; aspect-ratio: 1; }
 .chambers-team figcaption { display: grid; margin-top: .8rem; gap: .15rem; }
 .chambers-team figcaption strong { font-family: var(--sar-font-heading); font-size: 1.3rem; }
