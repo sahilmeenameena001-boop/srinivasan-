@@ -299,14 +299,10 @@
   .chambers-team-grid { row-gap: 0; }
   .chambers-team-grid > figure { display: grid; grid-row: 1 / span 2; grid-template-rows: subgrid; }
   .chambers-team-grid > p {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-self: stretch;
     grid-column: 2;
     grid-row: 1;
     max-width: 25rem;
-    gap: .5rem;
   }
 }
 .chambers-team-portrait { width: min(100%, 15rem); height: auto; aspect-ratio: 1; }
